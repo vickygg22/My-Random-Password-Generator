@@ -14,15 +14,44 @@
   </head>
   <body>
     <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+      <div class="mainDiv">
+        <h4>Password Generator</h4>
+        <div class="hello">
+          <div class="generatedPassword">
+            <span class="placeForPassword"></span>
+          </div>
+          <span><i class="fas fa-solid fa-clipboard"></i></span>
+        </div>
+        <form action="">
+          <input
+            type="number"
+            id="option1"
+            min="4"
+            max="20"
+            name="option1"
+            value="length"
+          />
+          <label for="option1">Password length</label><br />
+          <input
+            type="checkbox"
+            id="option2"
+            name="option2"
+            value="uppercase"
+          />
+          <label for="option2">Include uppercase letters</label><br />
+          <input
+            type="checkbox"
+            id="option3"
+            name="option3"
+            value="lowercase"
+          />
+          <label for="option4">Include lowercase letters</label><br />
+          <input type="checkbox" id="option4" name="option4" value="numbers" />
+          <label for="option5">Include numbers</label><br />
+          <input type="checkbox" id="opntion5" name="option5" value="symbols" />
+          <label for="option5">Include symbols</label><br />
+        </form>
+        <button class="generateButton">Generate password</button>
       </div>
     </div>
   </body>
