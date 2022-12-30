@@ -16,42 +16,66 @@
     <div class="container-fluid text-center">
       <div class="mainDiv">
         <h4>Password Generator</h4>
-        <div class="hello">
+        <div class="result">
           <div class="generatedPassword">
             <span class="placeForPassword"></span>
           </div>
-          <span><i class="fas fa-solid fa-clipboard"></i></span>
+          <span class="clipboardEl"
+            ><i class="fas fa-solid fa-clipboard"></i
+          ></span>
         </div>
-        <form action="">
-          <input
-            type="number"
-            id="option1"
-            min="4"
-            max="20"
-            name="option1"
-            value="length"
-          />
-          <label for="option1">Password length</label><br />
-          <input
-            type="checkbox"
-            id="option2"
-            name="option2"
-            value="uppercase"
-          />
-          <label for="option2">Include uppercase letters</label><br />
-          <input
-            type="checkbox"
-            id="option3"
-            name="option3"
-            value="lowercase"
-          />
-          <label for="option4">Include lowercase letters</label><br />
-          <input type="checkbox" id="option4" name="option4" value="numbers" />
-          <label for="option5">Include numbers</label><br />
-          <input type="checkbox" id="opntion5" name="option5" value="symbols" />
-          <label for="option5">Include symbols</label><br />
+        <form class="settings" action="">
+          <div class="setting">
+            <input
+              type="number"
+              id="length"
+              min="4"
+              max="20"
+              name="option1"
+              value="length"
+            />
+            <label for="length">Password length</label><br />
+          </div>
+          <div class="setting">
+            <input
+              type="checkbox"
+              id="uppercase"
+              name="option2"
+              value="uppercase"
+            />
+            <label for="uppercase">Include uppercase letters</label><br />
+          </div>
+          <div class="setting">
+            <input
+              type="checkbox"
+              id="lowercase"
+              name="option3"
+              value="lowercase"
+            />
+            <label for="lowercase">Include lowercase letters</label><br />
+          </div>
+          <div class="setting">
+            <input
+              type="checkbox"
+              id="numbers"
+              name="option4"
+              value="numbers"
+            />
+            <label for="numbers">Include numbers</label><br />
+          </div>
+          <div class="setting">
+            <input
+              type="checkbox"
+              id="symbols"
+              name="option5"
+              value="symbols"
+            />
+            <label for="symbols">Include symbols</label><br />
+          </div>
         </form>
-        <button class="generateButton">Generate password</button>
+        <button class="generateButton">
+          Generate password
+        </button>
       </div>
     </div>
   </body>
